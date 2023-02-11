@@ -573,4 +573,32 @@ r.forward(100)
 r.left(135)
 r.forward(90.8)
 
+infi_foss = Turtle()
+infi_foss.speed()
+infi_foss.penup()
+infi_foss.setpos(-300,-300)
+infi_foss.color(38,255,123)
+infi_foss.width(2)
+infi_foss.pendown()
+if_round=150
+if_rad=if_round/5
+if_c1=if_round/20
+if_c2=if_round/2.5
+if_c3=if_round/2
+if_c4=(if_round*3)/4
+if_ce=(if_round*3)/2
+if_m1=if_round/30
+if_m2=if_round/15
+for pos in range(if_round):
+	infi_foss.circle(if_rad)
+	if if_c1<pos<if_c2:
+		infi_foss.left(if_m1)
+	if if_c3<pos<if_c4:
+		infi_foss.right(if_m1)
+	if pos<if_ce:
+		infi_foss.forward(if_m2)
+	else:
+		infi_foss.forward(if_m1)
+
+
 
